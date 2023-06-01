@@ -17,6 +17,10 @@ const foodSchema = new Schema(
       type: String,
       required: true,
     },
+    address: {
+      type: String,
+      required: true,
+    },
     products: [
       {
         name: {

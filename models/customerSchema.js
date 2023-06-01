@@ -18,7 +18,7 @@ const userMongooseSchema = new Schema(
       type: String,
       required: true,
     },
-    adress: {
+    address: {
       type: String,
       required: true,
     },
@@ -32,7 +32,7 @@ const userJoiSchema = Joi.object({
   name: Joi.string().required(),
   email: Joi.string().email().required(),
   phone: Joi.string().required(),
-  adress: Joi.string().required(),
+  address: Joi.string().required(),
   totalPrice: Joi.number().required(),
   userOrder: Joi.array().required(),
 });
